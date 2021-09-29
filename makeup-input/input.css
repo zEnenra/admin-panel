@@ -1,25 +1,22 @@
 .body {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: sans-serif;
     font-size: 13px;
 }
 
 /* Оформление общих блоков input*/
 
-.input__boddy {
+.entry-field {
     position: relative;
     padding: 1rem 0;
     width: 352px;
     height: 400px;
     padding: 1rem 0px;
-    border: 2px dashed #8055FF;    
+    border: 2px dashed #8055ff;    
     box-sizing: border-box;
     border-radius: 5px;
 }
 
-.input__empty {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.entry-field__entering {
     padding: 8px 0px;
     position: absolute;
     width: 256px;
@@ -30,10 +27,7 @@
 }
 
 
-.input__incorrect {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.entry-field__incorrect {
     padding: 1rem 0;
     position: absolute;
     width: 256px;
@@ -43,10 +37,7 @@
     
 }
 
-.input__disable {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.entry-field__blocking {
     padding: 1rem 0;
     position: absolute;
     width: 256px;
@@ -57,85 +48,84 @@
 
 /* "Дата и время" над тэгом input */
 
-.signature_input {
+.entry-field__date-time {
     font-weight: bold;
-    font-size: 13px;
-    line-height: 16px;
+    font-size: 0.8rem;
+    line-height: 1rem;
     color: #000000;
    
 }
 
 /* Оформление поля ввода в input */
 
-.empty__date {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.entry-field__input {
     padding: .5rem .5rem .5rem 0.5rem;
     width: 256px;
     height: 32px;
-    left: calc(50% - 256px/2);
-    top: calc(50% - 32px/2 + 12px);
     background: #FFFFFF;
-    border: 1px solid #459DF5;
+    border: 1px solid #459df5;
     box-sizing: border-box;
     border-radius: 4px;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 8px 0px;
+    margin: 0.5rem 0;
 }
 
-.incorrect__date {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: .5rem .5rem .5rem 0.5rem;
+.entry-field__input::placeholder {
+    color: #bad8f5;  
+}
+
+.entry-field__input__wrong {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     width: 256px;
     height: 32px;
-    left: calc(50% - 256px/2);
-    top: calc(50% - 32px/2 + 12px);
-    background: #FFFFFF;
+    background: #fff;
     border: 1px solid #F53152;
     box-sizing: border-box;
     border-radius: 4px;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
     margin: 8px 0px;
 }
 
-.disable__date {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: .5rem .5rem .5rem 0.5rem;
+.entry-field__input__wrong::placeholder {
+    color: #000;
+}
+
+.entry-field__input__blocking {
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
     width: 256px;
     height: 32px;
-    left: calc(50% - 256px/2);
-    top: calc(50% - 32px/2 + 12px);
-    background: #BAD8F5;
+    background: #bad8f5;
     border: 1px solid #459DF5;
     box-sizing: border-box;
     border-radius: 4px;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
     margin: 8px 0px;
-
 }
 
-/* Иконка замка */
+.entry-field__input__blocking::placeholder {
+    color: #000;
+}
 
-.disable__input_icon {
+/* Иконки */
+
+.entry-field__input__icon {
     position: absolute;
     width: 16px;
     height: 18px;
     left: 232px;
     top: 46px;
     fill: #000;
+}
+
+.entry-field__input__button {
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    left: 232px;
+    top: 48px;
+    border: none;
+    background: url("data:image/svg+xml;charset=UTF-8,%3csvg viewBox='0 0 16 16' fill='none' stroke='%23bad8f5' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.5 3.5L3.5 12.5M3.5 3.5L12.5 12.5' fill='none'/%3e%3c/svg%3e");
+}
+
+.entry-field__input__button:hover {
+    background: url("data:image/svg+xml;charset=UTF-8,%3csvg viewBox='0 0 16 16' stroke-width='3' fill='none' stroke='%238055FF' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.5 3.5L3.5 12.5M3.5 3.5L12.5 12.5' fill='none'/%3e%3c/svg%3e");
+    cursor: pointer;
 }
 
