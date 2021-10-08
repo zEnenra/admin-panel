@@ -8,26 +8,31 @@
 </head>
 <body>
    
-    <form action="URL" class="entry-field"> 
-        <div class="entry-field__entering">
-            <div class="entry-field__date-time">Дата и время заказа</div> 
-            <input class="entry-field__input"  type="text" name="work__input" placeholder="Введите"> 
+    <form action="URL" class="input__boddy">
+       
+        <div class="input__empty">
+        <div class="signature_input">Дата и время заказа</div> 
+         <input class="empty__date"  type="text" name="work__input" value="Введите"> 
         </div>
-        <div class="entry-field__incorrect">
-            <div class="entry-field__date-time">Дату и время заказа</div>
-                <div class="entry-field__input__wrapper">
-                    <input class="entry-field__input__wrong"  placeholder="06.12.2021" name="work__input">
-                    <input class="entry-field__input__button">
-                </div>
+        
+        
+        <div class="input__incorrect">
+        <div class="signature_input">Дату и время заказа</div> 
+        <input class="incorrect__date"  type="text" name="work__input" value="06.12.2021">       
         </div>
-        <div class="entry-field__blocking">
-             <div class="entry-field__date-time">Дата и время заказа</div>
-            <input class="entry-field__input__blocking"  type="text" readonly name="work__input" placeholder="06.12.2021">
-                <svg class="entry-field__input__icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C4 2.79086 5.79086 1 8 1C10.2091 1 12 2.79086 12 5V7C13.1046 7 14 7.89543 14 9V13C14 14.1046 13.1046 15 12 15H4C2.89543 15 2 14.1046 2 13V9C2 7.89543 2.89543 7 4 7V5ZM10 5V7H6V5C6 3.89543 6.89543 3 8 3C9.10457 3 10 3.89543 10 5Z" stroke="none"/>
-                    <path d="M12 5C12 2.8 10.2 1 8 1C5.8 1 4 2.8 4 5L4 9H6V5C6 3.75 7 3 8 3C9 3 10 3.75 10 5V9H12V5Z" stroke="none"/>
-                 </svg>
+        
+       
+        <div class="input__disable">
+         <div class="signature_input">Дата и время заказа</div>
+        <input class="disable__date"  type="text" readonly name="work__input" value="06.12.2021">
+        
+        <svg class="disable__input_icon" viewBox="0 0 16 16" fill="#8055FF" stroke="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M4 5C4 2.79086 5.79086 1 8 1C10.2091 1 12 2.79086 12 5V7C13.1046 7 14 7.89543 14 9V13C14 14.1046 13.1046 15 12 15H4C2.89543 15 2 14.1046 2 13V9C2 7.89543 2.89543 7 4 7V5ZM10 5V7H6V5C6 3.89543 6.89543 3 8 3C9.10457 3 10 3.89543 10 5Z" stroke="none"/>
+        <path d="M12 5C12 2.8 10.2 1 8 1C5.8 1 4 2.8 4 5L4 9H6V5C6 3.75 7 3 8 3C9 3 10 3.75 10 5V9H12V5Z" stroke="none"/>
+        </svg>
+        
         </div>
+        
     </form>
 </body>
 </html>
