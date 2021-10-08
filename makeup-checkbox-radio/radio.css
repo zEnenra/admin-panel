@@ -1,4 +1,4 @@
-/* Левый чекбокс */
+/* Левый радио*/
 
 .custom-radio {
     display: flex;
@@ -56,7 +56,7 @@
 
 
 
-/* Правый чекбокс */
+/* Правый радио*/
 
 .custom-radio__second {
     position: absolute;
