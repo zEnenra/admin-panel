@@ -6,6 +6,7 @@
 /* Оформление общих блоков input*/
 
 .input-form {
+    position: relative;
     padding: 1rem 0;
     width: 352px;
     height: 400px;
@@ -16,6 +17,7 @@
 }
 
 .form-field {
+    position: absolute;
     display: flex;
     flex-direction: column;
     padding: 8px 0px;
@@ -27,6 +29,7 @@
 
 
 .form-incorrect {
+    position: absolute;
     display: flex;
     flex-direction: column;
     padding: 1rem 0;
@@ -38,6 +41,7 @@
 }
 
 .form-disable {
+    position: absolute;
     display: flex;
     flex-direction: column;
     padding: 1rem 0;
@@ -82,6 +86,7 @@
 }
 
 .form-disable__disable-date {
+    position: relative;
     padding: .5rem .5rem .5rem 0.5rem;
     width: 256px;
     height: 32px;
