@@ -5,8 +5,7 @@
 
 /* Оформление общих блоков input*/
 
-.input__boddy {
-    position: relative;
+.input-form {
     padding: 1rem 0;
     width: 352px;
     height: 400px;
@@ -16,26 +15,21 @@
     border-radius: 5px;
 }
 
-.input__empty {
+.form-field {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     padding: 8px 0px;
-    position: absolute;
     width: 256px;
     height: 72px;
     left: 48px;
-    top: 48px;
-    
+    top: 48px;  
 }
 
 
-.input__incorrect {
+.form-incorrect {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     padding: 1rem 0;
-    position: absolute;
     width: 256px;
     height: 72px;
     left: 48px;
@@ -43,12 +37,10 @@
     
 }
 
-.input__disable {
+.form-disable {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     padding: 1rem 0;
-    position: absolute;
     width: 256px;
     height: 72px;
     left: 48px;
@@ -57,7 +49,7 @@
 
 /* "Дата и время" над тэгом input */
 
-.signature_input {
+.input-form__signature-input {
     font-weight: bold;
     font-size: 13px;
     line-height: 16px;
@@ -67,70 +59,43 @@
 
 /* Оформление поля ввода в input */
 
-.empty__date {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.form-field__input-empty {
     padding: .5rem .5rem .5rem 0.5rem;
     width: 256px;
     height: 32px;
-    left: calc(50% - 256px/2);
-    top: calc(50% - 32px/2 + 12px);
     background: #FFFFFF;
     border: 1px solid #459DF5;
     box-sizing: border-box;
     border-radius: 4px;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
     margin: 8px 0px;
 }
 
-.incorrect__date {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.form-incorrect__input-date {
     padding: .5rem .5rem .5rem 0.5rem;
     width: 256px;
     height: 32px;
-    left: calc(50% - 256px/2);
-    top: calc(50% - 32px/2 + 12px);
     background: #FFFFFF;
     border: 1px solid #F53152;
     box-sizing: border-box;
     border-radius: 4px;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
     margin: 8px 0px;
 }
 
-.disable__date {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+.form-disable__disable-date {
     padding: .5rem .5rem .5rem 0.5rem;
     width: 256px;
     height: 32px;
-    left: calc(50% - 256px/2);
-    top: calc(50% - 32px/2 + 12px);
     background: #BAD8F5;
     border: 1px solid #459DF5;
     box-sizing: border-box;
     border-radius: 4px;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
     margin: 8px 0px;
 
 }
 
 /* Иконка замка */
 
-.disable__input_icon {
+.form-disable__input-icon {
     position: absolute;
     width: 16px;
     height: 18px;
